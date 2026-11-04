@@ -2,14 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Curlik1n - музыкальный коллектив из Москвы, создающий уникальный электронный звук. Слушайте нашу музыку на всех популярных стриминговых платформах.">
-    <meta name="keywords" content="Curlik1n, музыкальная группа, электронная музыка, Ambient, Dubstep, D'n'B, Drum, Bass, Hardcore">
-    <meta name="author" content="Curlik1n">
-    <meta property="og:title" content="Curlik1n - Музыкальный коллектив">
-    <meta property="og:description" content="Curlik1n - музыкальный коллектив из Москвы, создающий уникальный электронный звук">
+    <meta name="description" content="Curlyk1n - музыкальный коллектив из Москвы, создающий уникальный электронный звук. Слушайте нашу музыку на всех популярных стриминговых платформах.">
+    <meta name="keywords" content="Curlyk1n, музыкальная группа, электронная музыка, Ambient, Dubstep, D'n'B, Drum, Bass, Hardcore">
+    <meta name="author" content="Curlyk1n">
+    <meta property="og:title" content="Curlyk1n - Музыкальный коллектив">
+    <meta property="og:description" content="Curlyk1n - музыкальный коллектив из Москвы, создающий уникальный электронный звук">
     <meta property="og:type" content="website">
     
-    <title>Curlik1n - Музыкальный коллектив из Москвы</title>
+    <title>Curlyk1n - Музыкальный коллектив из Москвы</title>
 
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
