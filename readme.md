@@ -629,7 +629,7 @@
         <div class="container header-container">
             <a href="#" class="logo">
                 <i class="fas fa-music"></i>
-                <span>Tootoday</span>
+                <span>Curlyk1n</span>
             </a>
             
             <nav id="mainNav">
@@ -656,7 +656,7 @@
         <!-- Герой секция - ИСПРАВЛЕНА И ВОССТАНОВЛЕНА -->
         <section class="hero">
             <div class="container">
-                <h1 id="heroTitle">Tootoday</h1>
+                <h1 id="heroTitle">Curlyk1n</h1>
                 <p id="heroSubtitle">Музыкальный коллектив, создающий уникальный электронный звук</p>
                 <a href="#music" class="btn" id="listenMusic">Слушать музыку</a>
             </div>
@@ -668,12 +668,12 @@
                 <h2 id="aboutTitle">О группе</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p id="aboutText1">Tootoday — музыкальный коллектив, основанный в 2017 году в Москве. Изначально это была инструментальная группа, основными инструментами являлись баян и фортепиано. Постепенно фокус сместился в сторону электронной музыки.</p>
+                        <p id="aboutText1">Curlyk1n — музыкальный коллектив, основанный в 2017 году в Москве. Изначально это была инструментальная группа, основными инструментами являлись баян и фортепиано. Постепенно фокус сместился в сторону электронной музыки.</p>
                         <p id="aboutText2">Группа объединяет в своём творчестве различные оттенки электронной музыки от легкого Ambient до более тяжелых Dubstep и D'n'B, создавая уникальный стиль, который быстро завоевал популярность среди слушателей.</p>
-                        <p id="aboutText3">За время своего существования Tootoday выпустили два студийных альбома и несколько успешных синглов. Участники являются призерами различных музыкальных конкурсов и концертов. Наша музыка звучит на крупнейших стриминговых платформах страны и мира.</p>
+                        <p id="aboutText3">Ранее группа называлась TooToday, затем была переименована в Curlyk1n. За время своего существования Cyrlyk1n выпустили два студийных альбома и несколько успешных синглов. Участники являются призерами различных музыкальных конкурсов и концертов. Наша музыка звучит на крупнейших стриминговых платформах страны и мира.</p>
                     </div>
                     <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1519281682544-5f37c4b14c47?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Группа Tootoday в студии" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1519281682544-5f37c4b14c47?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Группа Curlyk1n в студии" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -725,7 +725,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <i class="fas fa-music"></i>
-                    <span>Tootoday</span>
+                    <span>Curlyk1n</span>
                 </div>
                 <p id="footerText">Слушайте нашу музыку на всех популярных платформах</p>
                 <div class="social-links">
@@ -740,7 +740,7 @@
                     </a>
                 </div>
                 <div class="copyright">
-                    <p id="copyrightText">© 2023 Tootoday. Все права защищены.</p>
+                    <p id="copyrightText">© 2023 Curlyk1n. Все права защищены.</p>
                 </div>
             </div>
         </div>
@@ -750,37 +750,37 @@
         // Данные для перевода
         const translations = {
             ru: {
-                heroTitle: "Tootoday",
+                heroTitle: "Curlyk1n",
                 heroSubtitle: "Музыкальный коллектив, создающий уникальный электронный звук",
                 listenMusic: "Слушать музыку",
                 aboutTitle: "О группе",
-                aboutText1: "Tootoday — музыкальный коллектив, основанный в 2017 году в Москве. Изначально это была инструментальная группа, основными инструментами являлись баян и фортепиано. Постепенно фокус сместился в сторону электронной музыки.",
+                aboutText1: "Curlyk1n — музыкальный коллектив, основанный в 2017 году в Москве. Изначально это была инструментальная группа, основными инструментами являлись баян и фортепиано. Постепенно фокус сместился в сторону электронной музыки.",
                 aboutText2: "Группа объединяет в своём творчестве различные оттенки электронной музыки от легкого Ambient до более тяжелых Dubstep и D'n'B, создавая уникальный стиль, который быстро завоевал популярность среди слушателей.",
-                aboutText3: "За время своего существования Tootoday выпустили два студийных альбома и несколько успешных синглов. Участники являются призерами различных музыкальных конкурсов и концертов. Наша музыка звучит на крупнейших стриминговых платформах страны и мира.",
+                aboutText3: "Ранее группа называлась TooToday, затем была переименована в Curlyk1n. За время своего существования Curlyk1n выпустили два студийных альбома и несколько успешных синглов. Участники являются призерами различных музыкальных конкурсов и концертов. Наша музыка звучит на крупнейших стриминговых платформах страны и мира.",
                 musicTitle: "Наша музыка",
                 contactsTitle: "Контакты",
                 emailLabel: "Электронная почта",
                 telegramLabel: "Telegram канал",
                 footerText: "Слушайте нашу музыку на всех популярных платформах",
-                copyrightText: "© 2023 Tootoday. Все права защищены.",
+                copyrightText: "© 2023 Curlyk1n. Все права защищены.",
                 navAbout: "О группе",
                 navMusic: "Наша музыка",
                 navContacts: "Контакты"
             },
             en: {
-                heroTitle: "Tootoday",
+                heroTitle: "Curlyk1n",
                 heroSubtitle: "Music band creating unique electronic sound",
                 listenMusic: "Listen to music",
                 aboutTitle: "About Us",
-                aboutText1: "Tootoday is a music band founded in 2017 in Moscow. Initially, it was an instrumental group with bayan and piano as the main instruments. Gradually, the focus shifted towards electronic music.",
+                aboutText1: "Curlyk1n is a music band founded in 2017 in Moscow. Initially, it was an instrumental group with bayan and piano as the main instruments. Gradually, the focus shifted towards electronic music.",
                 aboutText2: "The band combines various shades of electronic music from light Ambient to heavier Dubstep and D'n'B, creating a unique style that quickly gained popularity among listeners.",
-                aboutText3: "During its existence, Tootoday has released two studio albums and several successful singles. The members are winners of various music competitions and concerts. Our music is available on the largest streaming platforms in the country and worldwide.",
+                aboutText3: "Untill 2026 it was TooToday band and then it was renamed. During its existence, Curlyk1n has released two studio albums and several successful singles. The members are winners of various music competitions and concerts. Our music is available on the largest streaming platforms in the country and worldwide.",
                 musicTitle: "Our Music",
                 contactsTitle: "Contacts",
                 emailLabel: "Email",
                 telegramLabel: "Telegram channel",
                 footerText: "Listen to our music on all popular platforms",
-                copyrightText: "© 2023 Tootoday. All rights reserved.",
+                copyrightText: "© 2023 Curlyk1n. All rights reserved.",
                 navAbout: "About",
                 navMusic: "Music",
                 navContacts: "Contacts"
