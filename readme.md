@@ -12,25 +12,28 @@
     <title>Curlyk1n - Музыкальный коллектив из Москвы</title>
 
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
         /* Базовые стили и CSS переменные */
         :root {
-            --primary-color: #8a2be2;
-            --secondary-color: #4a00e0;
-            --accent-color: #ff6b6b;
-            --dark-color: #1a1a2e;
-            --light-color: #f8f9fa;
-            --gray-color: #6c757d;
-            --text-dark: #212529;
-            --text-light: #f8f9fa;
-            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            --transition: all 0.3s ease;
-            --border-radius: 10px;
+            --primary-color: #7c3aed;
+            --secondary-color: #4f46e5;
+            --accent-color: #f472b6;
+            --dark-color: #0f0f1a;
+            --card-bg: #ffffff;
+            --light-color: #f5f4f2;
+            --gray-color: #6b7280;
+            --text-dark: #1a1a2e;
+            --text-light: #f5f4f2;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.14);
+            --transition: all 0.25s ease;
+            --border-radius: 12px;
             --container-width: 1200px;
         }
 
@@ -46,7 +49,7 @@
         }
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
             background-color: var(--light-color);
@@ -54,7 +57,7 @@
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Space Grotesk', sans-serif;
             font-weight: 700;
             line-height: 1.3;
             margin-bottom: 1rem;
@@ -65,27 +68,29 @@
         }
 
         h2 {
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             text-align: center;
             margin-bottom: 3rem;
             position: relative;
+            color: var(--text-dark);
         }
 
         h2:after {
             content: '';
             position: absolute;
-            bottom: -15px;
+            bottom: -14px;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            width: 48px;
+            height: 3px;
+            background: var(--primary-color);
             border-radius: 2px;
         }
 
         p {
             margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            color: var(--text-dark);
         }
 
         a {
@@ -117,20 +122,24 @@
 
         .btn {
             display: inline-block;
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 12px 30px;
-            border-radius: 50px;
+            background: var(--primary-color);
+            color: #ffffff;
+            padding: 11px 28px;
+            border-radius: 8px;
             font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
             border: none;
             cursor: pointer;
             transition: var(--transition);
-            font-size: 1rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.01em;
         }
 
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow);
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.35);
+            color: #ffffff;
         }
 
         /* Хедер и навигация */
@@ -139,10 +148,11 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(26, 26, 46, 0.95);
-            backdrop-filter: blur(10px);
+            background-color: rgba(15, 15, 26, 0.97);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .header-container {
@@ -153,24 +163,23 @@
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: white;
             display: flex;
             align-items: center;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -0.02em;
         }
 
         .logo i {
             color: var(--primary-color);
             margin-right: 10px;
-            font-size: 2rem;
+            font-size: 1.4rem;
         }
 
         .logo span {
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+            color: #ffffff;
         }
 
         nav ul {
@@ -179,25 +188,27 @@
         }
 
         nav a {
-            color: white;
+            color: rgba(255,255,255,0.75);
             font-weight: 500;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             position: relative;
+            letter-spacing: 0.01em;
         }
 
         nav a:hover {
-            color: var(--primary-color);
+            color: #ffffff;
         }
 
         nav a:after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -4px;
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            background: var(--primary-color);
             transition: var(--transition);
+            border-radius: 1px;
         }
 
         nav a:hover:after {
@@ -216,20 +227,22 @@
         }
 
         .language-btn {
-            padding: 8px 20px;
-            border-radius: 50px;
+            padding: 6px 16px;
+            border-radius: 6px;
             font-weight: 600;
             transition: var(--transition);
             background: transparent;
             border: none;
-            color: white;
+            color: rgba(255,255,255,0.65);
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
+            letter-spacing: 0.05em;
+            font-family: 'Space Grotesk', sans-serif;
         }
 
         .language-btn.active {
             background-color: var(--primary-color);
-            color: white;
+            color: #ffffff;
         }
 
         .mobile-menu-btn {
@@ -245,12 +258,13 @@
         /* Герой секция - ИСПРАВЛЕНА И ВОССТАНОВЛЕНА */
         .hero {
             position: relative;
-            padding: 200px 0 100px;
-            background: linear-gradient(135deg, 
-                rgba(138, 43, 226, 0.9) 0%, 
-                rgba(74, 0, 224, 0.9) 50%, 
-                rgba(26, 26, 46, 0.9) 100%),
-                url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');                
+            padding: 180px 0 120px;
+            background:
+                linear-gradient(160deg,
+                    rgba(15, 15, 26, 0.82) 0%,
+                    rgba(79, 70, 229, 0.75) 50%,
+                    rgba(15, 15, 26, 0.88) 100%),
+                url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -269,8 +283,9 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 70% 70%, rgba(255, 107, 107, 0.1) 0%, transparent 50%);
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(124, 58, 237, 0.18) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(79, 70, 229, 0.15) 0%, transparent 55%);
             z-index: 1;
         }
 
@@ -281,47 +296,29 @@
         }
 
         .hero h1 {
-            font-size: 4.5rem;
-            margin-bottom: 25px;
-            background: linear-gradient(to right, #ffffff, #ffccff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            animation: fadeInUp 1s ease-out;
+            font-size: 4.8rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+            letter-spacing: -0.03em;
+            animation: fadeInUp 0.9s ease-out;
+            font-family: 'Space Grotesk', sans-serif;
         }
 
         .hero p {
-            font-size: 1.5rem;
-            max-width: 700px;
-            margin: 0 auto 50px;
-            color: rgba(255, 255, 255, 0.95);
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            animation: fadeInUp 1s ease-out 0.2s both;
+            font-size: 1.25rem;
+            max-width: 560px;
+            margin: 0 auto 44px;
+            color: rgba(255, 255, 255, 0.78);
+            line-height: 1.7;
+            animation: fadeInUp 0.9s ease-out 0.18s both;
         }
 
         .hero .btn {
-            font-size: 1.2rem;
-            padding: 16px 45px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            animation: fadeInUp 1s ease-out 0.4s both;
+            font-size: 1rem;
+            padding: 14px 38px;
+            animation: fadeInUp 0.9s ease-out 0.35s both;
             position: relative;
             overflow: hidden;
-        }
-
-        .hero .btn::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: 0.5s;
-        }
-
-        .hero .btn:hover::after {
-            left: 100%;
         }
 
         /* Анимация для героя */
@@ -340,12 +337,17 @@
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 50px;
+            gap: 60px;
             align-items: center;
         }
 
         .about-text {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+        }
+
+        .about-text p {
+            color: #374151;
+            line-height: 1.75;
         }
 
         .about-image {
@@ -356,53 +358,69 @@
 
         .about-image img {
             width: 100%;
-            height: auto;
-            transition: var(--transition);
+            height: 420px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
         }
 
         .about-image:hover img {
-            transform: scale(1.05);
+            transform: scale(1.04);
         }
 
         /* Музыка секция */
         .music {
-            background-color: #f8f9fa;
+            background-color: #f0eef9;
         }
 
         .platforms-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 24px;
         }
 
         .platform-card {
-            background-color: white;
+            background-color: #ffffff;
             border-radius: var(--border-radius);
             overflow: hidden;
-            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
             transition: var(--transition);
+            display: flex;
+            flex-direction: column;
         }
 
         .platform-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: transparent;
         }
 
         .platform-icon {
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 30px;
+            padding: 28px 30px;
             text-align: center;
-            font-size: 3rem;
+            font-size: 2.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
         }
 
         .platform-content {
-            padding: 25px;
+            padding: 22px 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
         }
 
         .platform-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+            font-size: 1.25rem;
+            margin-bottom: 0;
+            color: var(--text-dark);
+        }
+
+        .platform-content .btn {
+            align-self: flex-start;
         }
 
         /* Контакты секция */
@@ -410,53 +428,62 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .contact-info {
-            background-color: white;
+            background-color: #ffffff;
             padding: 40px;
             border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 0;
         }
 
         .contact-icon {
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
+            background-color: #ede9fe;
+            color: var(--primary-color);
+            width: 52px;
+            height: 52px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 20px;
-            font-size: 1.5rem;
+            margin-right: 18px;
+            font-size: 1.3rem;
+            flex-shrink: 0;
         }
 
         .contact-text h4 {
-            margin-bottom: 5px;
-            font-size: 1.2rem;
-        }
-
-        .contact-text a {
-            color: var(--primary-color);
+            margin-bottom: 4px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gray-color);
             font-weight: 600;
         }
 
+        .contact-text a {
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
         .contact-text a:hover {
-            text-decoration: underline;
+            color: var(--primary-color);
         }
 
         /* Футер */
         footer {
             background-color: var(--dark-color);
             color: white;
-            padding: 70px 0 30px;
+            padding: 60px 0 30px;
+            border-top: 1px solid rgba(255,255,255,0.04);
         }
 
         .footer-content {
@@ -467,8 +494,23 @@
         }
 
         .footer-logo {
-            font-size: 2rem;
-            margin-bottom: 20px;
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+        }
+
+        .footer-logo i {
+            color: var(--primary-color);
+            margin-right: 8px;
+        }
+
+        .footer-content p {
+            color: rgba(255,255,255,0.55);
+            font-size: 0.95rem;
+            margin-bottom: 0;
         }
 
         .social-links {
@@ -481,27 +523,34 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 1.3rem;
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.08);
+            color: rgba(255,255,255,0.75);
+            font-size: 1.1rem;
             transition: var(--transition);
+            border: 1px solid rgba(255,255,255,0.08);
         }
 
         .social-link:hover {
             background-color: var(--primary-color);
-            transform: translateY(-5px);
+            color: #ffffff;
+            transform: translateY(-3px);
+            border-color: transparent;
         }
 
         .copyright {
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
             width: 100%;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+        }
+
+        .copyright p {
+            color: rgba(255, 255, 255, 0.35);
+            margin-bottom: 0;
         }
 
         /* Адаптивность */
@@ -511,19 +560,24 @@
             }
             
             h2 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             .hero h1 {
-                font-size: 3.5rem;
+                font-size: 3.2rem;
             }
             
             .about-content {
                 grid-template-columns: 1fr;
+                gap: 36px;
+            }
+
+            .about-image img {
+                height: 320px;
             }
             
             .platforms-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
             }
         }
 
@@ -581,23 +635,24 @@
 
         @media (max-width: 576px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .hero {
                 padding: 130px 0 70px;
+                background-attachment: scroll;
             }
             
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2.6rem;
             }
             
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
             .platforms-grid {
@@ -605,7 +660,11 @@
             }
             
             .contact-info {
-                padding: 25px;
+                padding: 28px 22px;
+            }
+
+            .contact-content {
+                max-width: 100%;
             }
             
             .header-container {
@@ -617,8 +676,8 @@
             }
             
             .language-btn {
-                padding: 6px 15px;
-                font-size: 0.8rem;
+                padding: 5px 12px;
+                font-size: 0.78rem;
             }
         }
     </style>
@@ -762,7 +821,7 @@
                 emailLabel: "Электронная почта",
                 telegramLabel: "Telegram канал",
                 footerText: "Слушайте нашу музыку на всех популярных платформах",
-                copyrightText: "© 2023 Curlyk1n. Все права защищены.",
+                copyrightText: "© 2025 Curlyk1n. Все права защищены.",
                 navAbout: "О группе",
                 navMusic: "Наша музыка",
                 navContacts: "Контакты"
@@ -780,7 +839,7 @@
                 emailLabel: "Email",
                 telegramLabel: "Telegram channel",
                 footerText: "Listen to our music on all popular platforms",
-                copyrightText: "© 2023 Curlyk1n. All rights reserved.",
+                copyrightText: "© 2025 Curlyk1n. All rights reserved.",
                 navAbout: "About",
                 navMusic: "Music",
                 navContacts: "Contacts"
@@ -894,13 +953,17 @@
                 const platformName = currentLanguage === 'ru' ? platform.name : platform.nameEn;
                 const buttonText = currentLanguage === 'ru' ? 'Слушать' : 'Listen';
                 
+                const bgStyle = platform.color
+                    ? `background-color: ${platform.color}`
+                    : `background: linear-gradient(to right, var(--primary-color), var(--secondary-color))`;
+
                 platformCard.innerHTML = `
-                    <div class="platform-icon" style="background: ${platform.color || 'linear-gradient(to right, var(--primary-color), var(--secondary-color))'}">
-                        <i class="${platform.icon}"></i>
+                    <div class="platform-icon" style="${bgStyle}">
+                        <i class="${platform.icon}" style="color:#ffffff"></i>
                     </div>
                     <div class="platform-content">
                         <h3>${platformName}</h3>
-                        <a href="${platform.url}" target="_blank" rel="noopener noreferrer" class="btn">
+                        <a href="${platform.url}" target="_blank" rel="noopener noreferrer" class="btn" style="color:#ffffff">
                             ${buttonText}
                         </a>
                     </div>
@@ -923,20 +986,24 @@
 
         // Функция применения языка
         function applyLanguage() {
-            // Обновляем тексты на странице
-            document.getElementById('heroTitle').textContent = translations[currentLanguage].heroTitle;
-            document.getElementById('heroSubtitle').textContent = translations[currentLanguage].heroSubtitle;
-            document.getElementById('listenMusic').textContent = translations[currentLanguage].listenMusic;
-            document.getElementById('aboutTitle').textContent = translations[currentLanguage].aboutTitle;
-            document.getElementById('aboutText1').textContent = translations[currentLanguage].aboutText1;
-            document.getElementById('aboutText2').textContent = translations[currentLanguage].aboutText2;
-            document.getElementById('aboutText3').textContent = translations[currentLanguage].aboutText3;
-            document.getElementById('musicTitle').textContent = translations[currentLanguage].musicTitle;
-            document.getElementById('contactsTitle').textContent = translations[currentLanguage].contactsTitle;
-            document.getElementById('emailLabel').textContent = translations[currentLanguage].emailLabel;
-            document.getElementById('telegramLabel').textContent = translations[currentLanguage].telegramLabel;
-            document.getElementById('footerText').textContent = translations[currentLanguage].footerText;
-            document.getElementById('copyrightText').textContent = translations[currentLanguage].copyrightText;
+            // Обновляем тексты на странице (безопасно — пропускаем отсутствующие элементы)
+            const setText = (id, text) => {
+                const el = document.getElementById(id);
+                if (el) el.textContent = text;
+            };
+            setText('heroTitle', translations[currentLanguage].heroTitle);
+            setText('heroSubtitle', translations[currentLanguage].heroSubtitle);
+            setText('listenMusic', translations[currentLanguage].listenMusic);
+            setText('aboutTitle', translations[currentLanguage].aboutTitle);
+            setText('aboutText1', translations[currentLanguage].aboutText1);
+            setText('aboutText2', translations[currentLanguage].aboutText2);
+            setText('aboutText3', translations[currentLanguage].aboutText3);
+            setText('musicTitle', translations[currentLanguage].musicTitle);
+            setText('contactsTitle', translations[currentLanguage].contactsTitle);
+            setText('emailLabel', translations[currentLanguage].emailLabel);
+            setText('telegramLabel', translations[currentLanguage].telegramLabel);
+            setText('footerText', translations[currentLanguage].footerText);
+            setText('copyrightText', translations[currentLanguage].copyrightText);
             
             // Обновляем навигацию
             if (navLinks.length >= 3) {
@@ -1025,7 +1092,7 @@
 
     ym(106071419, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/106071419" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 
