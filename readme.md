@@ -481,6 +481,12 @@
             margin-bottom: 0;
         }
 
+        .contact-item + .contact-item {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+
         .contact-icon {
             background-color: #ede9fe;
             color: var(--primary-color);
@@ -799,15 +805,24 @@
                                 <a href="mailto:tootoday.band@gmail.com">tootoday.band@gmail.com</a>
                             </div>
                         </div>
-                   <!--     <div class="contact-item">
+                        <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fab fa-telegram"></i>
                             </div>
                             <div class="contact-text">
                                 <h4 id="telegramLabel">Telegram канал</h4>
                                 <a href="https://t.me/Curlykin" target="_blank" rel="noopener noreferrer">@Curlykin</a>
-                            </div> 
-                        </div> -->
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 id="maxLabel">Max канал</h4>
+                                <a href="https://max.ru/curlykin" target="_blank" rel="noopener noreferrer">Curlyk1n в Max</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -856,6 +871,7 @@
                 contactsTitle: "Контакты",
                 emailLabel: "Электронная почта",
                 telegramLabel: "Telegram канал",
+                maxLabel: "Max канал",
                 footerText: "Слушайте нашу музыку на всех популярных платформах",
                 copyrightText: "© 2025 Curlyk1n. Все права защищены.",
                 navAbout: "О группе",
@@ -874,6 +890,7 @@
                 contactsTitle: "Contacts",
                 emailLabel: "Email",
                 telegramLabel: "Telegram channel",
+                maxLabel: "Max channel",
                 footerText: "Listen to our music on all popular platforms",
                 copyrightText: "© 2025 Curlyk1n. All rights reserved.",
                 navAbout: "About",
@@ -1076,6 +1093,7 @@
             setText('contactsTitle', translations[currentLanguage].contactsTitle);
             setText('emailLabel', translations[currentLanguage].emailLabel);
             setText('telegramLabel', translations[currentLanguage].telegramLabel);
+            setText('maxLabel', translations[currentLanguage].maxLabel);
             setText('footerText', translations[currentLanguage].footerText);
             setText('copyrightText', translations[currentLanguage].copyrightText);
             
