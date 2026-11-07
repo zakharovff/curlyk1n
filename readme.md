@@ -820,7 +820,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4 id="maxLabel">Max канал</h4>
-                                <a href="https://max.ru/curlykin" target="_blank" rel="noopener noreferrer">Curlyk1n в Max</a>
+                                <a href="https://max.ru/join/CF7YNmEqr8gIoYhvtEW8AtryyNmWaK9Sjn4QSdyHqU0" target="_blank" rel="noopener noreferrer">Curlyk1n в Max</a>
                             </div>
                         </div>
                     </div>
